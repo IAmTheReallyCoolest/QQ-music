@@ -1,0 +1,79 @@
+#header .banxin{
+	 border-bottom: 1px solid #f2f2f2;
+    height: 90px;
+}
+#header .banxin>a{
+	float: left;
+	 width: 170px;
+    /*background-color: green;*/
+    margin: 22px 0;
+    height: 46px;
+	display: inline-block;
+	margin-right: 40px;
+}
+.banxin a:hover{
+	color: #31c27c;
+}
+#header .banxin ul{
+    display: inline-block;
+}
+#header .banxin ul li:first-child{
+   background-color:#31c27c;
+}
+#header .banxin ul li:first-child a{
+	color: #ffffff;
+}
+#header .banxin li{
+	display: inline-block;
+	height: 90px;
+	padding: 0 18px;
+	font-size: 18px;
+	line-height: 90px;
+}
+#header .banxin .ipt{
+	width: 218px;
+	height: 36px;
+	border: 1px solid #c9c9c9;
+	margin-left: 16px;
+}
+#header .banxin span{
+	font-size: 16px;
+	margin: 0 20px;
+}
+#header .banxin .btn1{
+	width: 109px;
+	height: 36px;
+	background-color: #32c27c;
+	color: #fff;
+	font-size: 14px;
+	border: 1px solid #32c27c;
+	margin-right: 10px;
+}
+#header .banxin .btn2{
+	width: 83px;
+	height: 36px;
+	border: 1px solid #c9c9c9;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
