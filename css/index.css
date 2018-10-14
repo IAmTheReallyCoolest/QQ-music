@@ -160,12 +160,151 @@
     background: url("../images/ji11.png") -50px -120px;
 }
 
+/*banner*/
+#banner{
+	overflow: hidden;
+	height: 735px;
+	background: url(../images/bj1.jpg) no-repeat -296px 0;
+}
+#banner .banxin{
+	height: 735px;
+}
+#banner .banxin>i{
+	display: inline-block;
+	width: 1200px;
+	height: 89px;
+	text-align: center;
+	color: #fff;
+	font-size: 45px;
+	padding-top: 84px;
+}
+/*banner的nav部分*/
+#banner .banxin .nav{
+	margin-left:381px;
+	width: 819px;
+}
+#banner .banxin .nav li{
+	float: left;
+	font-size: 16px;
+	margin-right: 69px;
+	height: 48px;
+}
+#banner .banxin .nav li:first-child a{
+	color: #fff;
+}
+#banner .banxin .nav li:last-child{
+    float: right;
+}
+#banner .banxin .nav  a{
+    color: #959595;
+    display: inline-block;
+}
+#banner .banxin .nav  a:hover{
+    color: #fff;
+}
 
+#banner .banxin .xia{
+    /*overflow: hidden;*/
+    position: relative;
+    height: 415px;
+    width: 1200px;
+}
+#banner .banxin .xia .keshi1{
+    overflow: hidden;
+    height: 415px;
+    width: 1200px;
+    position: relative;
+}
 
+#banner .banxin .xia ul{
+    width: 500%;
+    height: 415px;
+    position: absolute;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+#banner .banxin .xia ul li{
+	position: relative;
+	float: left;
+	display: inline-block;
+	height: 415px;
+	width: 300px;
+}
+#banner .banxin .xia ul li>a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	background-color: #000;
+}
+#banner .banxin .xia ul li a img{
+	position:absolute;
+}
+#banner .banxin .xia ul li .bofang{
+    width: 70px;
+    height: 70px;
+    background:url("../images/font3.png") no-repeat;
+    position: absolute;
+    top: 115px;
+    display: none;
+    left: 50%;
+    margin-left: -35px;
+    opacity: 0.8;
+}
+#banner .banxin .xia ul li .imgxia{
+    font-size: 15px;
+    text-align: center;
+    height: 115px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
+#banner .banxin .xia ul li .imgxia h4{
+    padding: 30px 0 10px;
+}
+#banner .banxin .xia ul li .imgxia a{
+    color: #999999;
+}
+#banner .banxin .xia ul li .imgxia h4 a{
+    color: #ffffff;
+}
 
+#banner .banxin .xia .anniu span{
+    width: 68px;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    position: absolute;
+}
+#banner .banxin .xia .anniu .anniul{
+    left: -143px;
+    top: 100px;
+    cursor: pointer;
+}
 
+#banner .banxin .xia .anniu .anniur{
+    right: -143px;
+    top: 100px;
+    cursor: pointer;
+}
 
+#banner .banxin .xia .btn{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#banner .banxin .xia .btn li{
+    float: left;
+    width: 30px;
+    height: 4px;
+    margin: 0 5px;
+    background-color: #6c6c6c;
+    cursor: pointer;
+}
 
 
 
