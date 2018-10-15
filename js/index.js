@@ -150,81 +150,151 @@ $("#jingCai").mouseleave(function () {
 })
 
 //---------移入和移出jingCai  左侧  按钮的动画
-    $("#jingCai .anniul").mouseenter(function(){
-        $(this).stop().animate({width:80},400).css("backgroundColor","#31c27c");
-    })
-    $("#jingCai .anniul").mouseleave(function(){
-        $(this).stop().animate({width:68},400).css("backgroundColor","rgba(0, 0, 0, 0.2)");
-    })
-    //---------移入和移出banner  右侧  按钮的动画
-    $("#jingCai .anniur").mouseenter(function(){
-        $(this).stop().animate({width:80},400).css("backgroundColor","#31c27c");
-    })
-    $("#jingCai .anniur").mouseleave(function(){
-        $(this).stop().animate({width:68},400).css("backgroundColor","rgba(0, 0, 0, 0.2)");
-    })
+$("#jingCai .anniul").mouseenter(function () {
+	$(this).stop().animate({
+		width: 80
+	}, 400).css("backgroundColor", "#31c27c");
+})
+$("#jingCai .anniul").mouseleave(function () {
+	$(this).stop().animate({
+		width: 68
+	}, 400).css("backgroundColor", "rgba(0, 0, 0, 0.2)");
+})
+//---------移入和移出banner  右侧  按钮的动画
+$("#jingCai .anniur").mouseenter(function () {
+	$(this).stop().animate({
+		width: 80
+	}, 400).css("backgroundColor", "#31c27c");
+})
+$("#jingCai .anniur").mouseleave(function () {
+	$(this).stop().animate({
+		width: 68
+	}, 400).css("backgroundColor", "rgba(0, 0, 0, 0.2)");
+})
 
 //标注了每个图片要运动到的位置
-    var config = [
+var config = [
 
-        {
-            width:751,
-            height:300,
-            top: 0,
-            left: 224,
-            opacity: 1,
-            zIndex: 4
-        },//2
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: 592,
-            opacity: 0.9,
-            zIndex: 3
-        },//3
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: 816,
-            opacity: 0,
-            zIndex: 3
-        },//4
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: 816,
-            opacity: 0,
-            zIndex: 3
+	{
+		width: 751,
+		height: 300,
+		top: 0,
+		left: 224,
+		opacity: 1,
+		zIndex: 4
+        }, //2
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: 592,
+		opacity: 0.9,
+		zIndex: 3
+        }, //3
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: 816,
+		opacity: 0,
+		zIndex: 3
+        }, //4
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: 816,
+		opacity: 0,
+		zIndex: 3
         },
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: -224,
-            opacity: 0,
-            zIndex: 3
-        },//0
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: -224,
-            opacity: 0,
-            zIndex: 3
-        },//0
-        {
-            width: 608,
-            height:244,
-            top: 28,
-            left: 0,
-            opacity: 0.9,
-            zIndex: 3
-        },//1
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: -224,
+		opacity: 0,
+		zIndex: 3
+        }, //0
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: -224,
+		opacity: 0,
+		zIndex: 3
+        }, //0
+	{
+		width: 608,
+		height: 244,
+		top: 28,
+		left: 0,
+		opacity: 0.9,
+		zIndex: 3
+        }, //1
 
+]; 
+console.log(config.length);
+//config其实就是一个配置单 规定了每张图片的大小位置层级透明度
 
+	//1获取元素
+	var anniuLeft = $("#jingCai .anniuil")[0];
+	var anniuRight = $("#jingCai .anniur")[0];
+	var jcbox=document.getElementById("jcbox");
+    var slide=jcbox.children[0];//可视区
+	var list = slide.children[0]; //要运动的ul
+	var lis = list.children; //要运动的li
+	//2设置每个li的默认显示区域
+	changPos();
+	var flag=true;//节流阀的开关，值为true表示可以执行
+	//设置五个标签的自定义属性值
+	for(var i =0;i<lis.length;i++){
+		lis[i].flag=true;
+	}
+	
+	//右键点击操作
+	anniuLeft.onclick=function(){
+		if(flag){
+			//点击按钮后，只能执行一次效果，采用变量控制的方式
+			flag=false;
+			for(var i=0;i<lis.length;i++){
+				lis[i].flag=false;
+			}
+			//将数组config中的第一个元素删除掉，并添加到config的最后
+			config.push(config.shift());
+			//根据config中的新位置重新设置li的运动
+			changePos();
+		}
+	};
+
+	function changePos(){
+		for(var i=0;i<config.length;i++){
+			animate(lis[i],config[i],function(){
+				//此处可以保证运动执行完毕
+				//由于此效果中每个原色的运动位置相近，所以再设置时进行简单的判断即可，不用进行精确的判断方式
+				flag=true;
+			});
+		
+		}
+	}
+
+	function animate(element,datas,fn){
+		clearInterval(element.timer);
+		element.timer=setInterval(function(){
+			//1 设置假设条件：假设本轮定时器执行后可以进行清除
+			var flag=true;
+			//先对获取到的数据进行遍历，对每一组数据进行相同操作即可
+			for(var k in datas){
+				//针对透明度和层级进行单独处理
+				if(k=="opacity"){
+					var styleName=k;
+					var target=datas[k]*100;
+					//opacity是c3属性，使用getstyle获取后不会出现“auto”
+					//js中的小鼠进行加减计算会出现精度问题
+					var current =getStyle(element,styleName)*100;
+				}
+			}
+		})
+	}
 
 
 
