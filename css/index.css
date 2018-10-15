@@ -306,6 +306,108 @@
     cursor: pointer;
 }
 
+/*main start*/
+#main{
+	overflow: hidden;
+	
+}
+#main .jingCai{
+	height: 610px;
+	background-color: #ffffff;
+}
+#main .jingCai .banxin .top{
+	height: 108px;
+	font-size: 46px;
+	text-align:center;
+	padding-top: 70px;
+}
+#main .jingCai .banxin .top .hx{
+	display:inline-block;
+	width: 72px;
+	border-top: 1px solid #e6e6e6;
+	margin: 0 77px;
+	margin-bottom: 15px;
+}
+/*精彩推荐--图片部分*/
+#main .jingCai .banxin .foot{
+	height: 432px;
+	background-color: #fff;
+	
+}
+#main .jingCai .banxin .foot .box{
+	height: 300px;
+	width: 1200px;
+	position: relative;
+}
+#main .jingCai .banxin .foot .box .keshi{
+	height: 300px;
+	width: 1200px;
+	overflow: hidden;
+	position: relative;
+	
+}
+#main .jingCai .banxin .foot .box .keshi ul li{
+	width: 751px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 224px;
+}
+#main .jingCai .banxin .foot .box .keshi ul li img{
+	width: 100%;
+}
+/*精彩推荐  图片  两侧按钮 部分*/
+#main .jingCai .banxin .foot .box .anniu span{
+	width: 68px;
+	height: 100px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 100px;
+	background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    position: absolute;
+}
+
+#main .jingCai .banxin .foot .box .anniu .anniul{
+	left: -143px;
+    top: 100px;
+    cursor: pointer;
+}
+#main .jingCai .banxin .foot .box .anniur{
+    right: -143px;
+    top: 100px;
+    cursor: pointer;
+}
+#main .jingCai .banxin .foot .box .btn{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    margin-left: -140px;
+    display: none;
+}
+#main .jingCai .banxin .foot .box .btn{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    margin-left: -140px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
