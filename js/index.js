@@ -291,9 +291,46 @@ console.log(config.length);
 					//opacity是c3属性，使用getstyle获取后不会出现“auto”
 					//js中的小鼠进行加减计算会出现精度问题
 					var current =getStyle(element,styleName)*100;
+					var step=(target-current)/10;
+					step=step>0? Math.ceil(step):Math.floor(step);
+					current=current+step;
+					//设置透明度时，除以设置过的对应倍数
+					element.style[styleName]=current/100;
+					
+					if(current!=target){
+						flag=false;
+					}
+				}else if(k=="zIndex"){
+					//层级为整数值，所以不需要设置运动效果，直接设置为指定值即可
+					element.style.zIndex=datas[k];
+				}else{
+					//styleName实际上是k
+					//target:实际上是obj[k]
+					var styleName=k;
+					var target=datas[k];
+					//下面这段代码可以让某一个样式运动到指定的位置
+					var current=parseInt(getStyle(element,styleName))||0;
+					var step=(target-current)/10;
+					step=step>0?Math.ceil(step):Math.floor(step);
+					current=current+step;
+					element.style[styleName]=current+"px";
+					//此位置原来是书写清除定时器的代码位置，但是某个样式运动完毕并不能进行清除，其他样式可能没到，使用假设成立法解决
+                    //2 找到假设失败的条件：如果某个样式运动时没有到达指定位置，阻止清除
+					if(current!=target){
+						flag=false;
+					}
 				}
 			}
-		})
+			//需要整体检测，只有每个样式都达到了指定位置才可以设置清除
+			//3验证flag的值
+			if(flag){
+				clearInterval(element.timer);
+				if(typeof fn=="function"){
+					fn();
+				}
+				
+			}
+		},5);
 	}
 
 
