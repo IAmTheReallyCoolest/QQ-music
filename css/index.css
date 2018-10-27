@@ -393,11 +393,66 @@
     margin-left: -140px;
     display: none;
 }
-
-
-
-
-
+/*排行榜*/
+#main .paiHang{
+	height: 830px;
+	background: url(../images/bj2.jpg) no-repeat -277px 0;
+}
+#main .paiHang a{
+	color: #ffffff;
+}
+#main .paiHang .banxin .top{
+	padding-top: 70px;
+	height: 108px;
+	text-align: center;
+	font-size: 46px;
+	color: #ffffff;
+}
+#main .paiHang .banxin .top .a{
+	display: inline-block;
+	font-size: 14px;
+	float: right;
+	right: 0;
+	bottom: 34px;
+}
+/*-------------------------*/
+#main .paiHang .banxin .pics{
+	width: 1200px;
+	height: 567px;
+	position:relative;
+}
+#main .paiHang .banxin .pics .bjtp{
+	position: absolute;
+	float: left;
+	width: 300px;
+	height: 567px;
+}
+#main .paiHang .banxin .pics .bjtp>i{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 50%;
+	margin-left: -35px;
+	top: 192px;
+	background: url("../images/font3.png");
+	display: none;
+	opacity: 0.8;
+}
+#main .paiHang .banxin .pics .bjtp:nth-child(1){
+	background: url(../images/paiHang.jpg) no-repeat 0 0;
+}
+#main .paiHang .banxin .pics .bjtp:nth-child(2){
+    background: url(../images/paiHang.jpg) no-repeat -300px 0;
+    left: 300px;
+}
+#main .paiHang .banxin .pics .bjtp:nth-child(3){
+    background: url(../images/paiHang.jpg) no-repeat -600px 0;
+    left: 600px;
+}
+#main .paiHang .banxin .pics .bjtp:nth-child(4){
+    background: url(../images/paiHang.jpg) no-repeat -900px 0;
+    left: 900px;
+}
 
 
 
