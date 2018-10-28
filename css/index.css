@@ -408,7 +408,7 @@
 	font-size: 46px;
 	color: #ffffff;
 }
-#main .paiHang .banxin .top .a{
+#main .paiHang .banxin .top a{
 	display: inline-block;
 	font-size: 14px;
 	float: right;
@@ -454,10 +454,39 @@
     left: 900px;
 }
 
-
-
-
-
+#main .paiHang .banxin .pics .bjtp .shang{
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	height:205px;
+	margin-top: 75px;
+}
+#main .paiHang .banxin .pics .bjtp .shang p2{
+	font-size: 36px;
+}
+#main .paiHang .banxin .pics .bjtp .shang i{
+	display: inline-block;
+	width: 62px;
+	border-top: 2px solid #4ca788;
+	margin-top: 65px;
+}
+#main .paiHang .banxin .pics .bjtp .xia{
+	padding: 0 60px;
+}
+#main .paiHang .banxin .pics .bjtp .xia li{
+	height: 57px;
+}
+#main .paiHang .banxin .pics .bjtp .xia .p3 a{
+	display: inline-block;
+	margin-bottom: 3px;
+	font-size: 16px;
+}
+#main .paiHang .banxin .pics .bjtp .xia .p4 a{
+	margin-top: 5px;
+	margin-left: 12px;
+	font-size: 13px;
+	color: #c9c9c9;
+}
 
 
 

@@ -390,8 +390,18 @@ var config = [
 
 
 
-
-
+//-------------排行榜部分
+ var $bjtp=$("#main .paiHang .bjtp");
+ var $bjtpbf=$("#main .paiHang .bjtp>i");
+ $bjtp.mouseenter(function(){
+	 $bjtpbf.eq($(this).index()).stop().fadeIn(400);
+	 $bjtp.eq($(this).index()).animate({top:-15},100).css("opacity",0.9);
+	 
+ })
+$bjtp.mouseleave(function(){
+	$bjtpbf.eq($(this).index()).stop().fadeOut(400);
+	$bjtp.eq($(this).index()).animate({top:0},100).css("opacity",1)
+})
 
 
 
