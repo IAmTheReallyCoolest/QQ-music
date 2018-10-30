@@ -487,10 +487,109 @@
 	font-size: 13px;
 	color: #c9c9c9;
 }
+/*热门歌单*/
+#main .reMen{
+	height: 758px;
+}
+#main .reMen .banxin .xia{
+	position: relative;
+	height: 465px;
+	width: 1200px;
+}
+#main .reMen .banxin .xia .keshi2{
+	position: relative;
+	overflow: hidden;
+	height: 465px;
+	width: 1200px;
+}
+#main .reMen .banxin .xia ul{
+	position: absolute;
+	width: 500%;
+	height: 465px;
+}
+#main .reMen .banxin .xia ul .lis{
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 465px;
+}
+#main .reMen .banxin .xia ul .lis .pic2{
+    position: absolute;
+}
+#main .reMen .banxin .xia ul .lis>a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    background-color: #000;
 
+}
+#main .reMen .banxin .xia ul .lis .bofangem{
+    width: 70px;
+    height: 70px;
+    background:url("../images/font3.png") no-repeat;
+    position: absolute;
+    top: 115px;
+    display: none;
+    left: 50%;
+    margin-left: -35px;
+    opacity: 0.8;
+}
 
+#main .reMen .banxin .xia ul .lis .imgxia{
+    font-size: 15px;
+    text-align: center;
+    height: 165px;
+    background-color: #333333;
+}
+#main .reMen .banxin .xia ul .lis .imgxia h4{
+    padding: 55px 0 12px;
+}
+#main .reMen .banxin .xia ul .lis .imgxia p{
+    color: #999999;
+}
+#main .reMen .banxin .xia ul .lis .imgxia h4 a{
+    color: #ffffff;
+}
 
+#main .reMen .banxin .xia .anniu span{
+	width: 68px;
+	height: 100px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 100px;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+	position: absolute;
+}
+#main .reMen .banxin .xia .anniu .anniul{
+    left: -143px;
+    top: 100px;
+    cursor: pointer;
+}
+#main .reMen .banxin .xia .anniu .anniur{
+    right: -143px;
+    top: 100px;
+    cursor: pointer;
+}
 
+/*--------------------------按钮部分2------*/
+#main .reMen .banxin .xia .btn{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#main .reMen .banxin .xia .btn li{
+    float: left;
+    width: 30px;
+    height: 4px;
+    margin: 0 5px;
+    background-color: #6c6c6c;
+    cursor: pointer;
+}
 
 
 
