@@ -29,3 +29,111 @@
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
 }
+/*头部导航*/
+#top{
+	height: 170px;
+}
+#header .container{
+	border-bottom: 1px solid #f2f2f2;
+	height: 90px;
+}
+#header .container>a{
+	float: left;
+	width: 170px;
+	margin: 22px 0;
+	height: 46px;
+	display: inline-block;
+	margin-right: 40px;
+}
+#header .container a:hover{
+	color: #31c27c;
+	
+}
+#header .container ul{
+	display: inline-block;
+}
+#header .container ul li:first-child{
+	background-color: #31c27c;
+}
+#header .container ul li:first-child a{
+	color: #fff;
+}
+#header .container li{
+	display: inline-block;
+	height: 90px;
+	padding: 0 18px;
+	font-size: 18px;
+	line-height: 90px;
+}
+#header .container .ipt{
+	width: 218px;
+	height: 36px;
+	border: 1px solid #c9c9c9;
+	margin-left: 16px;
+}
+#header .container span{
+	font-size: 16px;
+	margin: 0 20px;
+}
+#header .container .btn1{
+	width: 109px;
+	height: 36px;
+	background-color: #32c27c;
+	color: #fff;
+	font-size: 14px;
+	border: 1px solid #32c27c;
+	margin-right: 10px;
+}
+#header .container .btn2 {
+    width: 83px;
+    height: 36px;
+    border: 1px solid #c9c9c9;
+    font-size: 14px;
+}
+#nav .container{
+	height: 51px;
+	
+}
+#nav .container ul{
+	margin-left: 230px;
+}
+#nav .container ul li{
+	font-size: 15px;
+	margin-right: 47px;
+	line-height: 51px;
+	float: left;
+}
+#nav .container ul li:first-child a{
+	color: #31c27c;
+	
+}
+#nav .container ul a:hover{
+	color: #31c27c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

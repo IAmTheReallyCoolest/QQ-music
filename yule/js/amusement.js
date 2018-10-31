@@ -18,6 +18,9 @@ window.onload=function(){
 		this.width=this.viewport.offsetWidth;
 		this.height=this.viewport.offsetHeight;
 		//animation helper
-		
+		this.timer=0;
+		this._resetLeaf=function(leaf){
+			
+		}
 	}
 }
