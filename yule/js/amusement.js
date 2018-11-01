@@ -24,3 +24,12 @@ window.onload=function(){
 		}
 	}
 }
+
+
+
+$(function (){
+	//-----top头部导航 start
+	//-----top头部导航end
+	//-----电梯按钮 start----
+	var eleColor=
+})

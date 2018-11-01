@@ -114,6 +114,47 @@
 
 
 
+/*电梯按钮*/
+#elevator{
+	width: 200px;
+	left: 10px;
+	position: fixed;
+	display: none;
+	z-index: 8;
+}
+#elevator span{
+	display: inline-block;
+}
+#elevator .eleDot{
+	position: absolute;
+	top: 140px;
+	left: 5px;
+}
+#elevator .eleDot li{
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+#elevator .eletitle{
+	position: absolute;
+	top: 137px;
+	left: 20px;
+	color: #000;
+	font-size: 5px;
+}
+#elevator .eletitle span{
+	padding-left: 7px;
+	line-height: 16px;
+}
+#elevator .eletitle li{
+	height: 16px;
+	width: 70p;
+	background: blue;
+	border-radius: 10px;
+	margin-bottom: 19px;
+	display: none;
+}
 
 
 
