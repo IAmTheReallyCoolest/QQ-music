@@ -20,7 +20,15 @@ window.onload = function () {
 		//animation helper
 		this.timer = 0;
 		this._resetLeaf = function (leaf) {
-
+		//place leaf towards the top left
+			leaf.x=this.width*2-Math.random()*this.width*1.75;
+			leaf.y=-10;
+			leaf.z=Math.random()*200;
+			if(leaf.x>this.width){
+				leaf.x=this.width+10;
+				leaf.y=Math.random()*this.height/2;
+			}
+			// at tht start,the leaf can be anywhere;
 		}
 	}
 }
@@ -110,12 +118,31 @@ $(function () {
             }, 1000);
         }
     );
+	//banner 右侧新闻手风琴
+	$("#banner_right li").mouseenter(function(){
+		$(this).children().children("img").stop().slideDown().parent().parent().siblings().children().children("img").hide();
+		$(this).children().children("span").stop().css({background:"#dddddd",border:0})
+		.parent().parent().siblings().children().children("span").css({
+                background: "#fff",
+                borderBottomWidth: "1px",
+                borderBottomStyle: "dotted",
+                borderBottomColor: "#cccccc"
+            });
+	})
 
 
 
 
 
-
+	
+	
+});
+	
+	
+	
+	
+	
+	
 
 
 
