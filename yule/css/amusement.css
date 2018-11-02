@@ -158,14 +158,81 @@
 
 
 
+/*banner 横幅 start*/
+#banner{
+	height: 430px;
+	margin-top: 25px;
+}
+/*banner 左侧轮播图*/
+#banner_left{
+	float: left;
+	position: relative;
+	height: 430px;
+	width: 840px;
+	overflow: hidden;
+	-webkit-perspective:500px;
+}
+.banner_left_pic .maoni p{
+	 width: 168px;
+    height: 86px;
+    background-color: pink;
+    position: absolute;
+    font-size: 40px;
+    background: url("../images/banner11.jpg") no-repeat;
+    transition: all 1s ease 0s;
+}
+.banner_left_pic .fei .maoni p {
+    opacity: 0;
+}
 
+#banner .banner_left_pic img {
+    height: 430px;
+    width: 840px;
+}
+#banner .banner_left_lis {
+    position: absolute;
+    bottom: 15px;
+    left: 675px;
 
+}
 
+#banner .banner_left_lis {
+    position: absolute;
+    bottom: 15px;
+    left: 675px;
 
-
-
-
-
+}
+#banner_left .banner_btn {
+    position: absolute;
+}
+#banner_right {
+    float: right;
+    width: 330px;
+    height: 430px;
+}
+#banner_right img {
+    width: 330px;
+    height: 180px;
+    border-radius: 0 0 10px 10px;
+}
+#banner_right ul li:first-child {
+    background: #dddddd;
+}
+#banner_right ul li {
+    float: left;
+}
+#banner_right span {
+    color: #333;
+    font-size: 15px;
+    display: inline-block;
+    height: 41px;
+    width: 330px;
+    line-height: 41px;
+    border-bottom: 1px dotted #cccccc;
+}
+#banner_right span:hover {
+    color: #ff6666;
+}
 
 
 
