@@ -29,10 +29,28 @@ window.onload = function () {
 				leaf.y=Math.random()*this.height/2;
 			}
 			// at tht start,the leaf can be anywhere;
+			if(this.timer==0){
+				leaf.y=Math.random()*this.height;
+			}
+			//choose axis of rotation
+			//If axis is not X ,chose a random static x-rotation for greater variability
+			leaf.rotation.speed=Math.random()*10;
+			var randomAxis=Math.random();
+			if(randomAxis>0.5){
+				leaf.rotation.axis='X';
+			}else if (randomAxis>0.25){
+				leaf.rotation.axis='Y';
+				leaf.rotation.x=Math.random()*180+90;
+			}else{
+				leaf.rotation.axis='Z';
+				leaf.rotation.x=Math.random()*360-180;
+				//looks weird if the rotation is too fast around this axis
+				leaf.rotation.speed=Math.random()*3;
+			}
+			
 		}
-	}
+ 	}
 }
-
 
 
 $(function () {
