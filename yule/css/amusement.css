@@ -233,10 +233,28 @@
 #banner_right span:hover {
     color: #ff6666;
 }
-
-
-
-
+/**mmain 主体 start*/
+#main{
+	margin-top: 50px;
+}
+/*main 追星必备*/
+#idolator .fl li{
+	float: left;
+	margin-right: 20px;
+}
+#idolator .fl li img{
+	border-radius: 15px 15px 0 0;
+}
+#idolator .fl li p{
+	background: rgba(0,0,0,0.1);
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 0 0 15px 15px;
+}
+#idolator .fr img{
+	border-radius: 10px;
+}
 
 
 

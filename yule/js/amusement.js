@@ -47,7 +47,21 @@ window.onload = function () {
 				//looks weird if the rotation is too fast around this axis
 				leaf.rotation.speed=Math.random()*3;
 			}
+			//random speed
+			leaf.xSpeedVariation=Math.random()*0.8-0.4;
+			leaf.ySpeed=Math.random()+1.5;
+			return leaf;
 			
+		}
+		this._undateLeaf=function(leaf){
+			var leafWindSpeed=this.options.wind.speed(this.timer-this.options.wind.start,leaf.y);
+			
+			var xSpeed=leafWindSpeed+leaf.xSpeedVariation;
+			leaf.x-=xSpeed;
+			leaf.y+=leaf.ySpeed;
+			leaf.rotation.value+=leaf.ratation.speed;
+			
+			//
 		}
  	}
 }
@@ -146,9 +160,20 @@ $(function () {
                 borderBottomStyle: "dotted",
                 borderBottomColor: "#cccccc"
             });
+	});
+
+//--------main 主体
+//------追星必备
+	$("#idolator .fl li").mouseenter(function(){
+		$(this).transition({
+			perspective:'500px',
+			rotateY:360
+		});
+	});
+	$("#idolator .fl li").mouseleave(function(){
+		$(this).off("mouseenter");
 	})
-
-
+	
 
 
 
