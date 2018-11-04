@@ -174,7 +174,11 @@ $(function () {
 		$(this).off("mouseenter");
 	})
 	
-
+//main 现场直播live
+    $("#main_live .live_conent li img").mouseenter(function () {
+        $(this).css({opacity: 1}).parent().parent().siblings().children().children("img").css({opacity: 0.4});
+        $(this).transition({scale: 1.3});
+    });
 
 
 	
