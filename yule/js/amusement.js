@@ -179,8 +179,17 @@ $(function () {
         $(this).css({opacity: 1}).parent().parent().siblings().children().children("img").css({opacity: 0.4});
         $(this).transition({scale: 1.3});
     });
-
-
+	$("#main_live .live_conent li img").mouseleave(function(){
+		$(this).css({opacity:0.4,width:"220px"})
+		$(this).transition({scale:1});
+	})
+//高清美图
+$("#main_pretty .pretty_pic1").mouseenter(function(){
+        $(this).children("span").animate({opacity:1,bottom:"0px"});
+    });
+    $("#main_pretty .pretty_pic1").mouseleave(function(){
+        $(this).children("span").animate({opacity:0,bottom:"-30px"});
+    });
 	
 	
 });

@@ -315,3 +315,65 @@
     font-size: 10px;
     /*background: #000;*/
 }
+/*高清美图**/
+#main_pretty {
+    margin-top: 30px;
+}
+
+#main_pretty li {
+    float: left;
+}
+
+#main_pretty li + li {
+    margin-left: 15px;
+}
+
+#main_pretty .pretty_bottom {
+    margin-top: 15px;
+}
+
+#main_pretty .pretty_pic1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#main_pretty .pretty_pic1 span {
+    position: absolute;
+    color: #fff;
+    left:15px;
+    bottom: -30px;
+    opacity: 0;
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px 0 6px ;
+}
+
+#main_pretty .pretty_pic2 {
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+
+#main_pretty .pretty_pic2 > span {
+    position: absolute;
+    color: #fff;
+    left:15px;
+    bottom: 0px;
+    /*opacity: 0;*/
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px 0 6px ;
+}
+
+
+
+
+
