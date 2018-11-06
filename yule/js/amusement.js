@@ -190,7 +190,17 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
     $("#main_pretty .pretty_pic1").mouseleave(function(){
         $(this).children("span").animate({opacity:0,bottom:"-30px"});
     });
-	
+//娱乐头条
+	$(function(){
+		var oBox=document.getElementById('box');
+		var oPag=document.querySelector('#box .pag1');
+		var oFront=document.querySelector('#box .pag1 .front');
+		var oBack=document.querySelector('#box .pag1 .back')
+		var oPag2=document.querySelector('#box .pag2')
+		var  iNow=0;
+		var bReady=true;
+		oBox.onclick=function(){}
+	})
 	
 });
 	

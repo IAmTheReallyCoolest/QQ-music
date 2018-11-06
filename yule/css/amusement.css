@@ -372,6 +372,130 @@
     line-height: 30px;
     padding: 0 6px 0 6px ;
 }
+/*娱乐头条*/
+#headline{
+	margin-top: 60px;
+	
+}
+/*翻书效果start*/
+#box{
+	overflow: hidden;
+}
+
+#box .pag1{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform-style: preserve-3d;
+	transition: 1s all ease;
+	z-index: 2;
+	transform-origin: left center;
+	
+}
+
+#box .pag1 span{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front{
+	background: url(../images/headline10.jpg) no-repeat right top;
+    transform: translateZ(1.1px);
+}
+.back {
+    background: url(../images/headline11.jpg) no-repeat left top;
+    transform: translateZ(-1.1px) scale(-1, 1);
+    opacity: 0;
+}
+
+.pag2{
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: url(../images/headline11.jpg) no-repeat right top;
+	z-index: 1;
+	display: none;
+}
+
+/*翻书效果动画 end*/
+#headline .headline_pic{
+	position: relative;
+	width: 318px;
+	height: 410px;
+	
+}
+#headline .headline_pic h4{
+	font-size: 16px;
+	color: #fff;
+}
+#headline .headline_pic p{
+	color: #ccc;
+	font-size: 14px;
+}
+#headline .headline_pic>div{
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+}
+#headline .headline_news{
+	background: rgba(255,255,255,0.6);
+	
+}
+#headline .headline_news li{
+	padding: 12px 0;
+	margin-left: 18px;
+	border-bottom: 1px solid #ccc;
+}
+#headline .headline_news h3:hover{
+	color: #ff6666;
+}
+#headline .headline_news p:hover{
+	color: #ff6666;
+}
+#headline .headline_news h3{
+	height: 35px;
+}
+#headline .headline_news p {
+    color: #8b8b8b;
+    font-size: 15px;
+}
+#headline .headline_bottom {
+    margin-top: 36px;
+}
+#headline .headline_movie div + div {
+    margin-top: 30px;
+}
+#headline .movie_lis {
+    color: #8b8b8b;
+    position: relative;
+    height: 258px;
+    width: 330px;
+}
+#headline .headline_rig img {
+    height: 200px;
+    width: 330px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#headline .headline_rig img {
+    height: 200px;
+    width: 330px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
 
 
 
