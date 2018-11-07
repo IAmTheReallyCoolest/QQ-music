@@ -199,7 +199,10 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
 		var oPag2=document.querySelector('#box .pag2')
 		var  iNow=0;
 		var bReady=true;
-		oBox.onclick=function(){}
+		oBox.onclick=function(){
+			if (bReady == false) return;
+            bReady = false;
+		}
 	})
 	
 });
