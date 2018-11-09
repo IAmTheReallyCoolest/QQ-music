@@ -202,8 +202,28 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
 		oBox.onclick=function(){
 			if (bReady == false) return;
             bReady = false;
+			
+			iNow++;
+			oPag.style.transition="1s all ease";
+			oPag.style.transform='rotateY(-180deg)';
+			oPag.addEventListener('transitionend',function(){
+				oPag.style.transition='none';
+				oPag.style.transform='rotateY(0deg)';
+				
+				oFront.style.backgroundImage=oBox.style.backgroundImage = "url(images/headline1" + iNow % 4 + ".jpg)";  //4有几张banner就%几
+                oBack.style.backgroundImage = oPag2.style.backgroundImage = "url(images/headline1" + (iNow + 1) % 4 + ".jpg)";
+                bReady = true;
+			},false);
 		}
 	})
+	setInterval(function () {
+        $("#box").trigger("click")
+    }, 2000)
+    $(function () {
+        $(".btn").click(function () {
+            $("#box").fadeToggle();
+        })
+    })
 	
 });
 	
