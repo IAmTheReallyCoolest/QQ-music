@@ -224,7 +224,58 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
             $("#box").fadeToggle();
         })
     })
-	
+	//明星签名
+	 var starPos = [
+        {
+            width: 100,
+            top: 0,
+            left: 285,
+            opacity: 0.6,
+            zIndex: 2
+        },
+        {
+            top: 25,
+            left: 90,
+            opacity: 0.7,
+            zIndex: 3
+        },
+        {
+            top: 50,
+            left: 0,
+            opacity: 0.8,
+            zIndex: 4
+        },
+        {
+            top: 75,
+            left: 95,
+            opacity: 0.9,
+            zIndex: 5
+        },
+        {
+            width: 100,
+            top: 105,
+            left: 285,
+            opacity: 1,
+            zIndex: 6
+        },//1
+        {
+            top: 95,
+            left: 480,
+            opacity: 0.9,
+            zIndex: 5
+        },//2
+        {
+            top: 50,
+            left: 560,
+            opacity: 0.8,
+            zIndex: 4
+        },//3
+        {
+            top: 25,
+            left: 450,
+            opacity: 0.7,
+            zIndex: 3
+        }]//4
 });
 	
 	
