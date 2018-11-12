@@ -276,6 +276,71 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
             opacity: 0.7,
             zIndex: 3
         }]//4
+	  var starPosWid = [100, 150, 200, 250, 200, 150, 100];
+    var flag = true;//节流阀的开关，值为true，表示可以执行
+    var lis = $("#star .star_lis li");
+    var imgs = $("#star .star_lis img");
+
+    function changePos() {
+        for (var i = 0; i < starPos.length; i++) {
+            lis.eq(i).animate(starPos[i], function () {
+                //此处可以保证运动执行完毕
+                //由于此效果中每个元素的运动位置相近，所以在设置时进行简单的判断即可，不用进行精确的判断方式
+                flag = true;
+            });
+        }
+    }
+
+    function changeWid() {
+        for (var i = 0; i < starPosWid.length; i++) {
+            lis.eq(i).children("img").animate(starPosWid[i], function () {
+                //此处可以保证运动执行完毕
+                //由于此效果中每个元素的运动位置相近，所以在设置时进行简单的判断即可，不用进行精确的判断方式
+                flag = true;
+            });
+        }
+    }
+
+    changePos();
+
+    $("#star .star_rotate").mouseover(function () {
+        $("#star .star_btn").stop().animate({opacity: 1}, 500)
+    })
+    $("#star .star_rotate").mouseout(function () {
+        $("#star .star_btn").stop().animate({opacity: 0}, 500)
+    })
+    function muMa() {
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].flag = true;
+        }
+        //4 右按钮点击操作
+        if (flag) {
+            //点击按钮后，只能执行一次效果,采用变量控制的方式
+            flag = false;
+            for (var i = 0; i < lis.length; i++) {
+                lis.eq(i).flag = false;
+            }
+
+            //将数组starPos中的第一个元素删除掉，并添加到starPos的最后
+            starPos.push(starPos.shift());
+            //根据starPos中的新位置，重新设置li的运动
+            changePos();
+            changeWid();
+        }
+    }
+
+    var timer = setInterval(muMa, 700);
+    lis.mouseenter(function () {
+        clearInterval(timer);
+    }).mouseleave(function () {
+        timer = setInterval(muMa, 700);
+    });
+    lis.click(function(){
+        var index1=$(this).index()+1;
+        if($(this).css('zIndex')==6){
+            document.body.style.backgroundImage = "url(images/" + index1 + ".jpg)"
+        }
+    });
 });
 	
 	
