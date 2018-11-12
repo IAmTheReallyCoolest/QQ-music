@@ -493,6 +493,69 @@
     top: 0;
     left: 0;
 }
+/*时装*/
+#star {
+    margin-top: 60px;
+}
+
+#star .star_rotate {
+    width: 840px;
+    height: 525px;
+    position: relative;
+    background: url("../images/showbackground.jpg") no-repeat 0 0px;
+    background-size: 840px 615px;
+
+}
+#btn{
+    width:80px;
+    height: 40px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 60px;
+    left: 365px;
+    background: #31c27c;
+    color: #353535;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;
+}
+#star .star_ad {
+    width: 330px;
+}
+#star .star_lis li {
+    position: absolute;
+}
+#star .star_lis li img {
+    width: 250px;
+}
+#star .starAdTop {
+    position: relative;
+    height: 430px;
+}
+#star .starAdTop li {
+    position: absolute;
+}
+#star .starAdTop li img {
+    width: 260px;
+}
+
+#star .starAdBottom li {
+    float: left;
+    border: 2px solid black;
+}
+#star .starAdBottom li img {
+    width: 61px;
+}
+
+
+
+
+
+
+
+
 
 
 
