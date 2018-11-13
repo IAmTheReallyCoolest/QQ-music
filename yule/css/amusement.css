@@ -549,6 +549,57 @@
     width: 61px;
 }
 
+/*foot 底部 start*/
+#footer{
+	color: #999;
+	margin-top: 20px;
+	background-color: #333;
+}
+#footer a{
+	color: #999;
+}
+#footer a:hover{
+	color: #31c27c;
+}
+/*footer   top*/
+#footer .container .ftTop{
+	font-size: 15px;
+	height: 280px;
+}
+#footer .container .ftTop>div{
+	float: left;
+	height: 280px;
+}
+#footer .container .ftTop .ftTopl p{
+	font-weight: 400;
+	padding: 80px 0 46px;
+}
+#footer .container .ftTop .ftTopl li{
+	text-align: center;
+	width: 95px;
+	float: left;
+	margin-bottom: 10px;
+}
+#footer .container .ftTop .ftTopl li a{
+	display: block;
+}
+#footer .container .ftTop .ftTopl li a i{
+	display: block;
+	margin-top: 12px;
+}
+#footer .container .ftTop .ftTopl li a div{
+	width: 95px;
+	height: 48px;
+	background-color: green;
+}
+
+
+
+
+
+
+
+
 
 
 

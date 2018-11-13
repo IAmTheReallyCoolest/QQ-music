@@ -280,6 +280,7 @@ $("#main_pretty .pretty_pic1").mouseenter(function(){
     var flag = true;//节流阀的开关，值为true，表示可以执行
     var lis = $("#star .star_lis li");
     var imgs = $("#star .star_lis img");
+	
 
     function changePos() {
         for (var i = 0; i < starPos.length; i++) {
