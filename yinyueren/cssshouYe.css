@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+ul{
+	list-style: none;
+}
+ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:  #868686;
+}
+/*个人中心*/
+.geRen {
+    margin: 0 auto;
+    height: 301px;
+    width: 538px;
+    background-color: #fafafa;
+    margin-top: 122px;
+    border: 1px solid #ccc;
+}
+
+p {
+    width: 538px;
+    height: 26px;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    text-align: center;
+    margin-top: 77px;
+    font-weight: bold;
+}
+
+.geRen .zhuCe {
+    width: 299px;
+    height: 251px;
+    float: left;
+    margin-top: 41px;
+}
+
+.geRen .zhuCe img {
+    margin-left: 40px;
+}
+
+.geRen .zhuCe .xia .shouJi {
+    margin: 0 auto;
+    width: 225px;
+    height: 29px;
+    background-color: #2979c7;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+.geRen .zhuCe .xia .dl {
+    margin: 0 auto;
+    width: 225px;
+    height: 29px;
+    background-color: #2979c7;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+.geRen .zhuCe .xia .shouJi a {
+    color: #fff;
+}
+
+.geRen .zhuCe .xia .dl a {
+    color: #fff;
+}
+
+.geRen .weiXin {
+    width: 239px;
+    height: 251px;
+    /*background-color: blue;*/
+    float: right;
+    margin-top: 41px;
+}
+
+.geRen .weiXin ul li {
+    /*width: 41px;*/
+    height: 41px;
+    line-height: 41px;
+
+}
+
+.geRen .weiXin ul li a {
+    margin-left: 53px;
+}
+
+.geRen .weiXin ul li a:hover {
+    text-decoration: underline;
+}
+
+.geRen .weiXin ul li + li {
+    margin-top: 15px;
+}
+
+.geRen .weiXin ul li:first-child {
+    background: url(images/46.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:nth-child(2) {
+    background: url(images/47.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:nth-child(3) {
+    background: url(images/48.jpg) left center no-repeat;
+    padding-right: 12px;
+}
+
+.geRen .weiXin ul li:last-child {
+    background: url(images/49.jpg) left center no-repeat;
+    padding-right: 12px;
+}
