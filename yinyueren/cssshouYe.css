@@ -121,3 +121,30 @@ p {
     background: url(images/49.jpg) left center no-repeat;
     padding-right: 12px;
 }
+/*常见问题*/
+.wenTi{
+	width: 1366px;
+	height: 1985px;
+	background: url("images/51.png");
+}
+.wenTi .yy{
+	width: 200px;
+	height: 60px;
+	background-color: #242424;
+	position: fixed;
+	left: 80px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 35px;
+}
+.wenTi .huoJian{
+	width: 40px;
+	height: 40px;
+	background: url(images/64.gif);
+	position: fixed;
+	right: 20px;
+	bottom: 70px;
+}
+
+
+
