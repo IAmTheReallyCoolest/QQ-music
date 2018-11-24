@@ -1,0 +1,18 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#header{
+	position: relative;
+	left: 18%;
+}
+#header img{
+	width: 960px;
+}
+#footer{
+	position: relative;
+	left: 18%;
+	width: 960px;
+	height: 145px;
+	background-image: url(../img/bottombak.PNG);
+}
