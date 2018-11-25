@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 980px;
+    margin: auto;
+}
+#lala{
+	width: 980px;
+	height: 860px;
+	 border: 1px solid #e2dada;
+}
+		.wenzi4{
+			font-size: 13.5px;
+		
+		}
+img {
+    display: block;
+}
+
+.center1 {
+    background: url("../img/lala.png");
+    width: 100%;
+    height: 48px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 14px;
+}
+.center1 a:hover{
+	color:orange;
+}
+
+words {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    width: 50%;
+}
+
+.center2 {
+    width: 130px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 24px;
+    color: orange;
+    height: px;
+    border-right: 1px rgba(0, 0, 1, 0.2) solid;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.bottom {
+    width: 100%;
+    height: 300px;
+    margin-top: -20px;
+}
+
+ul {
+    display: inline;
+    margin-right: 40px;
+}
+
+li {
+    width: 100%;
+    height: 45px;
+    border-bottom:1px dashed;
+    line-height: 50px;
+    text-indent: 2em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+p {
+    height: 10px;
+    float: right;
+    margin-top: 0px;
+    line-height: 50px;
+    color:gray;
+	margin-right: 50px;
+}
+#footer {
+            position: relative;
+            top: 265px;
+        }

@@ -1,0 +1,292 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title>规建局</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#main {
+			width: 980px;
+			height: 800px;
+			border: 1px solid darkgray;
+			position: relative;
+			left: 18%
+		}
+
+		#container {
+			width: 980px;
+			position: relative;
+		}
+
+		#header {
+			position: relative;
+			/*left: 26%;*/
+		}
+
+		#left {
+			height: 600px;
+			width: 245px;
+			background-color: #f8faf9;
+
+			position: absolute;
+			/*left:  26%;*/
+		}
+
+		#left hr {
+
+			border: 1.5px solid #c92121;
+		}
+
+		#left .one {
+			font-size: 25px;
+			color: #c92121;
+			margin-left: 29%;
+			line-height: 80px;
+		}
+
+		#left .two,
+		.three {
+			font-size: 20px;
+			line-height: 40px;
+			width: 80%;
+			height: 40px;
+			color: #c92121;
+			position: relative;
+			left: 18%;
+			top: 17%;
+		}
+
+		#left .three a {
+			color: black;
+		}
+
+		#left div span {
+			position: absolute;
+			left: 20%;
+		}
+
+		#left .two {
+			background-color: #ececec;
+			cursor: pointer;
+		}
+
+
+
+		#left a {
+			text-decoration: none;
+			color: red;
+		}
+
+		.four {
+			width: 9px;
+			height: 9px;
+			border-top: 2px solid #c92121;
+			border-right: 2px solid #c92121;
+			transform: rotate(45deg);
+			position: absolute;
+			right: -100%;
+			top: 35%;
+		}
+
+		#right {
+			position: absolute;
+			width: 715px;
+			height: 600px;
+			left: 27%;
+
+
+		}
+
+		#right .yikuai {
+			padding: 0.8% 0 0 2%;
+			position: relative;
+		}
+
+		.wenzi1 {
+			color: #c92121;
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		.wenzi2 {
+			top: 18px;
+			position: absolute;
+			right: 0;
+			font-size: 17px;
+		}
+
+		#right a {
+			text-decoration: none;
+			color: darkgray;
+		}
+
+		.hr1 {
+			border-bottom: 1.5px solid darkgray;
+
+		}
+
+		.hr2 {
+			position: absolute;
+			width: 15%;
+			border: 2px solid #c92121;
+			top: 45px;
+		}
+
+		.sanjiao {
+			display: inline-block;
+			border: 7px solid transparent;
+			overflow: hidden;
+			border-bottom: none;
+			border-top-color: #c92121;
+			position: absolute;
+			left: 9%;
+		}
+
+		#right li {
+			position: relative;
+			bottom: -10px;
+			line-height: 60px;
+			font-size: 18px;
+		}
+
+		.wenzi3 {
+			color: darkgray;
+			position: absolute;
+			right: 5%;
+			font-size: 16px;
+		}
+
+		#left .one a {
+			color: #c92121;
+		}
+
+		#right ul li {
+			font-size: 18px;
+		}
+
+		#right ul li a {
+			color: black;
+		}
+
+		#footer {
+			position: relative;
+			top: 583px;
+		}
+
+		#top a {
+			text-decoration: none;
+			color: black;
+		}
+
+		#top {
+			background-image: url(img/lala.png);
+			width: 100%;
+			height: 30px;
+			position: relative;
+			font-size: 17px;
+			line-height: 30px;
+		}
+
+		#top a:hover {
+			color: #c92121;
+		}
+		.wenzi4{
+			font-size: 13.5px;
+		
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<img src="img/biaotou.jpg">
+		</div>
+		<div id="container">
+			<div id="top">
+				<span>&ensp;当前位置：|</span>
+				<a href="sh.html">园区行政执法公示栏</a>
+				>><a href="sh.html">事后公开</a>
+				>>
+				<a href="">规建局</a>
+			</div>
+			<div id="left">
+				<span class="one"><a href="sh.html">事后公开</a></span>
+				<hr>
+				<div class="two"><span>规建局<div class="four"></div></span></div>
+				<div class="three"><span><a href="shanjian.html">安监局</a></span></div>
+			</div>
+			<div id="right">
+				<div class="yikuai">
+					<span class="wenzi1">&ensp;&nbsp;行政许可</span>
+					<span class="wenzi2"><a href="#">更多+</a></span>
+					<div class="hr1"></div>
+					<hr class="hr2">
+					<div class="sanjiao">
+					</div>
+					<ul>
+						<li class="q"> <a href="doc/xuke.pdf">行政许可</a><span class="wenzi3">2018-11-12</span></li>
+					</ul>
+				</div>
+				<div class="yikuai">
+					<span class="wenzi1">&ensp;&nbsp;行政处罚</span>
+					<span class="wenzi2"><a href="#">更多+</a></span>
+					<div class="hr1"></div>
+					<hr class="hr2">
+					<div class="sanjiao">
+					</div>
+					<ul>
+						<li class="q"> <a href="doc/行政处罚.xls">行政处罚</a><span class="wenzi4">(文件下载)</span><span class="wenzi3">2018-11-12</span></li>
+					</ul>
+				</div>
+				<div class="yikuai">
+					<span class="wenzi1">&ensp;&nbsp;行政征收</span>
+					<span class="wenzi2"><a href="#">更多+</a></span>
+					<div class="hr1"></div>
+					<hr class="hr2">
+					<div class="sanjiao">
+					</div>
+					<ul>
+						<li> <a href="#">&nbsp;</a><span class="wenzi3"></span></li>
+					</ul>
+				</div>
+				<div class="yikuai">
+					<span class="wenzi1">&ensp;&nbsp;行政收费</span>
+					<span class="wenzi2"><a href="#">更多+</a></span>
+					<div class="hr1"></div>
+					<hr class="hr2">
+					<div class="sanjiao">
+					</div>
+					<ul>
+						<li> <a href="#">&nbsp;</a><span class="wenzi3"></span></li>
+					</ul>
+				</div>
+				<div class="yikuai">
+					<span class="wenzi1">&ensp;&nbsp;行政检查</span>
+					<span class="wenzi2"><a href="#">更多+</a></span>
+					<div class="hr1"></div>
+					<hr class="hr2">
+					<div class="sanjiao">
+					</div>
+					<ul>
+						<li> <a href="#">&nbsp;</a><span class="wenzi3"></span></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer" style="background-color: rgb(230,227,227);">
+			<hr>
+			<div class="bottom-1" style="text-align: center;">石家庄桥西区人民政府办公室</div>
+			<div class="bottom-1" style="text-align: center;">关于印发桥西区重大执法决定法制审核办法的通知</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
